@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="robots" content="noindex">
+<title>DragTak · installer</title>
+<style>
+  :root { --fond: #000; --texte: #fff; --gris: #9ca3af; --vert: #16a34a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 20px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 24px 16px 48px; text-align: center; }
+  img { width: 120px; height: 120px; border-radius: 24px; margin: 8px auto 12px; display: block; }
+  h1 { font-size: 28px; margin: 0 0 24px; letter-spacing: .04em; }
+  a.go { display: block; background: var(--vert); color: #fff; text-decoration: none; font-weight: 800; font-size: 28px; padding: 28px 12px; border-radius: 16px; margin: 0 auto 28px; max-width: 480px; }
+  ol { text-align: left; max-width: 480px; margin: 0 auto; padding-left: 1.3em; }
+  li { margin: 0 0 18px; }
+  b { color: #fde047; }
+  p.v { color: var(--gris); font-size: 14px; margin-top: 32px; }
+  .ios { display: none; max-width: 480px; margin: 0 auto; font-size: 22px; }
+</style>
+</head>
+<body>
+  <img src="../icon-512.png" alt="">
+  <h1>DRAGTAK</h1>
+  <div id="android">
+    <a class="go" href="DragTak.apk" download>INSTALLER</a>
+    <ol>
+      <li>Appuyez sur <b>INSTALLER</b>.</li>
+      <li>Si le téléphone pose une question, appuyez sur <b>TÉLÉCHARGER</b>, puis <b>OUVRIR</b>.</li>
+      <li>S'il dit « non autorisé » : appuyez sur <b>PARAMÈTRES</b>, activez l'interrupteur, revenez en arrière.</li>
+      <li>Appuyez sur <b>INSTALLER</b>. S'il avertit, appuyez sur <b>INSTALLER QUAND MÊME</b>.</li>
+      <li>Ouvrez <b>DragTak</b>. À chaque question, appuyez sur <b>AUTORISER</b> (choisissez <b>TOUT LE TEMPS</b> pour la position).</li>
+    </ol>
+  </div>
+  <div class="ios" id="ios">L'appli iPhone arrive bientôt.<br><br>En attendant, ouvrez <b>console.dragtak.fr/#/terrain</b> dans Safari.</div>
+  <p class="v">Android · version 2.0.3</p>
+  <script>
+    if (/iPhone|iPad|Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 0) { document.getElementById('android').style.display = 'none'; document.getElementById('ios').style.display = 'block' }
+  </script>
+</body>
+</html>
