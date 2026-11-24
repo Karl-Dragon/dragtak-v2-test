@@ -1,0 +1,1 @@
+import{i as r}from"./jspdf.es.min-DSsbWyQe.js";import{B as o}from"./geotiff-BdlGYcje.js";import"./index-73FXTwPW.js";import"./browser-C6FOnbQS.js";class d extends o{decodeBlock(e){return r(new Uint8Array(e)).buffer}}export{d as default};
