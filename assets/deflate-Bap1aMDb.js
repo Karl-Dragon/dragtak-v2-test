@@ -1,0 +1,1 @@
+import{i as r}from"./TerrainApp-CeXqEeux.js";import{B as o}from"./geotiff-CtWoxFf5.js";import"./index-ze-3D4z4.js";import"./browser-C6FOnbQS.js";import"./index-ByQmvAOv.js";class d extends o{decodeBlock(e){return r(new Uint8Array(e)).buffer}}export{d as default};
